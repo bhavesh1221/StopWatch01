@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to right, #ccff99 0%, #0000ff 100%);
+}
+.clockhour{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.state1{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.clockminute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.state2{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+.clocksec{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+    <h1 class="clockhour">00 </h1>
+    <h1 class="state1">:</h1>
+
+    <h1 class="clockminute">00 </h1>
+    <h1 class="state2">:</h1>
+
+    <h1 class="clocksec">00</h1>
+   </div>
+    <script>
+        const clock = () => {
+            var y = document.querySelector('.clocksec')
+            var z = document.querySelector('.clockminute')
+            var b = document.querySelector('.clockhour')
+
+            var x = 0;
+            var a = 0;
+            var c = 0;
+
+            setInterval(()=> {
+              x++
+              y.innerHTML = x
+              if (x == 60) {
+                  x = 0;
+                  a++
+                  z.innerHTML = a;
+                  if( a == 60){
+                      a=0;
+                      c++
+                      b.innerHTML = c
+                  }
+              }
+            },1000)
+        }
+        clock()
+    </script>
+</body>
+</html>
